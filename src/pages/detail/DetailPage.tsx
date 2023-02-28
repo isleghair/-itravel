@@ -27,6 +27,7 @@ export const DetailPage: React.FC<RouteComponentProps<MatchParams>> = () => {
 
     const dispatch = useDispatch();
 
+    // 副作用函数
     useEffect(() => {
         dispatch(getProductDetail(touristRouteId))
     }, []);
