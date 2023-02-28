@@ -1,0 +1,49 @@
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    /* background-color: #00BDAB; */
+    /* border: 1px solid; */
+    border-radius: 5px;
+    /* padding: 10px; */
+    cursor: pointer;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+    margin-top: 10px;
+    box-shadow: 3px 3px 5px wheat;
+    width: 220px;
+    height: 358px;
+}
+
+.cardContainer:hover {
+    transform: scale(1.05);
+}
+
+.cardTitle {
+    font-size: medium;
+    margin-top: 8px;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #141414;
+}
+
+.cardAuthor {
+    width: 210px;
+    height: 25px;
+    /* background-color: antiquewhite; */
+    display: inline;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+
+.author {
+    border-radius: 50%;
+    float: left;
+}
+
+.neckName {
+    color: #141414;
+    margin-left: 10px;
+}

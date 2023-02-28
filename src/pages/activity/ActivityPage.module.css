@@ -1,0 +1,10 @@
+.activityList {
+    width: 100vw;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-bottom: 20px;
+}
