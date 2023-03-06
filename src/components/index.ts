@@ -9,3 +9,5 @@ export * from "./productComments"
 export * from './productList'
 export * from './paymentCard'
 export * from './activityCard'
+export * from './leftmessage'
+export * from './rightmessage'

@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from "./App.module.css";
 import { Link, BrowserRouter, Switch, Route } from "react-router-dom";
-import { HomePage, SignInPage, RegisterPage, DetailPage, TestPage, SearchPage, ShoppingCartPage, ActivityPage, ActivityDetailPage } from "./pages";
+import { HomePage, SignInPage, RegisterPage, DetailPage, TestPage, SearchPage, ShoppingCartPage, ActivityPage, ActivityDetailPage, GroupeChatPage } from "./pages";
 import { Redirect } from "react-router-dom";
 import { useSelector } from './redux/hooks';
 
@@ -30,6 +30,7 @@ function App() {
                     <Route path="/search/:keywords?" component={SearchPage} />
                     <Route path="/activityPage" component={ActivityPage} />
                     <Route path="/activityDetail/:activityId" component={ActivityDetailPage} />
+                    <Route path="/groupChat" component={GroupeChatPage} />
                     <PrivateRoute isAuthenticated={jwt != null}
                         path="/shoppingCart" component={ShoppingCartPage} />
                     <Route render={() => <h1>404 NOT FOUND </h1>} />

@@ -1,0 +1,58 @@
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: #008c8c;
+    text-align: center;
+    line-height: 50px;
+}
+
+.container {
+    position: absolute;
+    margin-top: 50px;
+    background-color: aqua;
+    width: 80%;
+    top: 0;
+    bottom: 0;
+}
+
+.chart {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 70%;
+    background-color: #fff;
+    padding: 20px;
+    overflow: scroll;
+
+}
+
+.input-value {
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    position: absolute;
+    background-color: #008c8c;
+}
+
+.input-value textarea {
+    width: 100%;
+    height: 80%;
+    border: 0;
+    padding: 20px;
+}
+
+.input-value button {
+    width: 100%;
+    border: 0;
+    height: 15%;
+}
+
+.online {
+    position: absolute;
+    margin-top: 50px;
+    background-color: aqua;
+    width: 20%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}

@@ -14,6 +14,7 @@ export const ActivityPage: React.FC = () => {
     const activities = useSelector(state => state.activityList.data)
 
     const dispatch = useDispatch();
+    console.log(new Date());
 
     useEffect(() => {
         dispatch(getActivityList());
