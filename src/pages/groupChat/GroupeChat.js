@@ -97,36 +97,38 @@ export const GroupeChatPage = () => {
     }
     return (
         <>
-            <div className={styles["header"]}>
-                <h2>活动聊天室</h2>
-            </div>
-            <div className={styles["container"]}>
-                <div className={styles["chart"]}>
-                    {
-                        messageList.map(item => {
-                            if (item.indexOf(username) > 0) {
-                                console.log(username)
-                                return <Right value={item} key={item + Math.random()} />
-                            } else {
-                                return <Left value={item} key={item + Math.random()} />
+            <div>
+                <div className={styles["header"]}>
+                    <h2>活动聊天室</h2>
+                </div>
+                <div className={styles["container"]}>
+                    <div className={styles["chart"]}>
+                        {
+                            messageList.map(item => {
+                                if (item.indexOf(username) > 0) {
+                                    console.log(username)
+                                    return <Right value={item} key={item + Math.random()} />
+                                } else {
+                                    return <Left value={item} key={item + Math.random()} />
 
-                            }
+                                }
+                            })
+                        }
+                    </div>
+                    <div className={styles["input-value"]}>
+                        <textarea ref={messageRef} type="text" placeholder="发送消息" />
+                        <button onClick={sendMessage}>发送</button>
+                    </div>
+                </div>
+                <div className={styles["online"]}>
+
+                    <span>当前在线人数 {userList.length}</span>
+                    {
+                        userList.map(item => {
+                            return <h2 key={Math.random()}>{item}</h2>
                         })
                     }
                 </div>
-                <div className={styles["input-value"]}>
-                    <textarea ref={messageRef} type="text" placeholder="发送消息" />
-                    <button onClick={sendMessage}>发送</button>
-                </div>
-            </div>
-            <div className={styles["online"]}>
-
-                <span>当前在线人数 {userList.length}</span>
-                {
-                    userList.map(item => {
-                        return <h2 key={Math.random()}>{item}</h2>
-                    })
-                }
             </div>
         </>
     )

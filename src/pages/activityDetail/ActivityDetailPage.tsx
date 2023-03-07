@@ -28,10 +28,10 @@ export const ActivityDetailPage: React.FC<RouteComponentProps<MatchParams>> = ()
             <div className={styles["joinactivity"]}>
                 <Typography.Title>活动详情</Typography.Title>
                 <Typography.Text>{activity.title}</Typography.Text>
-                <div className={styles.cardContainer}>
+                <div className={styles["cardContainer"]}>
                     <img src={activity.image} width={220} height={260}></img>
                     <div className={styles.cardTitle}>
-                        <text >{activity.image.slice(0, 20)}</text>
+                        <text >{activity.title.slice(0, 20)}</text>
                     </div>
                     <div className={styles.cardAuthor}>
                         <img src={activity.image} width={25} height={25} className={styles.author}></img>
